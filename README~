@@ -98,5 +98,3 @@ Which launch the pocket_sphinx node that is going to listen to yor voice, follow
 	roslaunch simulation_tobot tobot_voice_nav.launch
 	
 Which launch a python script that take the recognized words of the topic created by the pocket_sphinx recognizer (which is /recognizer/output) and depend on which command it receive is going to move tobot accordingly.
-
-Have fun ;).
