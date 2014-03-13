@@ -134,7 +134,7 @@
   </joint>
   
   <!--BACK WHEEL-->
-  <link name="bwheel">
+  <link name="fwheel">
     <visual>
       <geometry>
         <cylinder length="${wheel_w}" radius="${fwheel_rad}"/>
@@ -150,9 +150,9 @@
     </collsion>
   </link>
   
-  <joint name="base_to_bwheel" type="continuous">
+  <joint name="base_to_fwheel" type="continuous">
     <parent link="base_link"/>
-    <child link="bwheel"/>
+    <child link="fwheel"/>
     <axis xyz="0 1 0"/>
     <origin xyz="${-width} 0 ${GROUND_CLEARANCE-(bodylen/2)-(fwheel_rad)}" rpy="0 0 0"/>
   </joint>
